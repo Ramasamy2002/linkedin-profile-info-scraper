@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Scraper</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      background-color: #f4f4f9;
+      margin: 0;
+      box-sizing: border-box;
+      width: 400px; /* Increased width */
+    }
+
+    h2 {
+      text-align: center;
+      color: #0073b1;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    button {
+      display: block;
+      width: calc(100% - 20px);
+      margin: 10px auto;
+      padding: 12px;
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005582;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      background: #ffffff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      overflow-wrap: anywhere;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    a {
+      color: #0073b1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>LinkedIn Scraper</h2>
+
+  <button id="scrape-button">Scrape Profiles</button>
+  
+  <div>
+    <h3 class="section-title">Scraped Profiles</h3>
+    <ul id="profile-list"></ul>
+  </div>
+  
+  <button id="scrape-contact-info" style="display:none;">Scrape Contact Info</button>
+  
+  <div>
+    <h3 class="section-title">Scraped Emails</h3>
+    <ul id="email-list"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
